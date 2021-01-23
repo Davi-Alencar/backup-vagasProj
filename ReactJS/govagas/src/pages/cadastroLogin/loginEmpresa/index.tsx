@@ -6,6 +6,11 @@ import Header from '../../../components/header/index';
 import Button from '../../../components/button/index';
 import Input from '../../../components/input/index';
 import ImgBahia from '../../../assets/images/empresa/bahiano.jpeg';
+import Banner2 from '../../../assets/images/Space.svg'
+import ImgBrq from '../../../assets/images/empresa/BRQ.png';
+import ImgIntelli from '../../../assets/images/empresa/intelitrader.jpeg';
+import ImgSpace from '../../../assets/images/empresa/spaceneedlelogo.jpeg';
+import ImgRede from '../../../assets/images/empresa/daredelogo.jpeg';
 import ImgSnoopy from '../../../assets/images/snoopy.jpeg';
 import ImgNao from '../../../assets/images/nao.jpeg';
 function LoginEmpresa() {
@@ -76,25 +81,35 @@ function LoginEmpresa() {
               </ol>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src={ImgBahia} className="d-block w-200" alt="..." />
+                  <img src={ImgIntelli} className="d-block w-200" alt="..." />
                   <div className="carousel-caption d-none d-md-block">
-                    <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
+                    <h5>Intelitrader</h5>
                     <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI
           focados na plataforma Microsoft com inteligência artificial, análise de negócios...’’</p>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src={ImgSnoopy} className="d-block w-200" alt="..." />
+                  <img src={ImgBrq} className="d-block w-200" alt="..." />
                   <div className="carousel-caption d-none d-md-block">
-                    <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
+                    <h5>BRQ</h5>
                     <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI focados
           na plataforma Microsoft com inteligência artificial, análise de negócios...’’</p>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src={ImgNao} className="d-block w-200" alt="..." />
+                  <div className="flexImg">
+                    <img src={Banner2} className="d-block w-200" alt="..." />
+                  </div>
                   <div className="carousel-caption d-none d-md-block">
-                    <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
+                    <h5>SpaceNeedle</h5>
+                    <p>O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI focados
+          na plataforma Microsoft com inteligência artificial, análise de negócios...’’.</p>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <img src={ImgRede} className="d-block w-200" width="900px" height="450px" alt="..." />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>DAREDE</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                   </div>
                 </div>
@@ -139,11 +154,11 @@ function LoginEmpresa() {
                         <p>Esqueceu sua senha?</p>
                       </div>
                       <div className="btn-criarconta">
-                        <Button  name="btn1" value="Login" />
+                        <Button name="btn1" value="Login" />
                       </div>
                       <div className="login-inputs">
                         <tr className="tr-empresa" />
-                        <Link to="/loginCandidato"><h1 className="h1-empresa1">Eu sou uma aluno</h1></Link>
+                        <Link to="/loginCandidato"><h1 className="h1-empresa1">Eu sou um aluno</h1></Link>
                       </div>
                     </div>
                   </div>
@@ -179,7 +194,7 @@ function LoginEmpresa() {
                         <tr />
                       </div>
                       <div className="btn-criarconta1">
-                        <Button  name="btn1" value="Criar Conta" />
+                        <Button name="btn1" value="Criar Conta" />
                       </div>
                       <div className="login-inputs">
                         <tr className="tr-empresa" />

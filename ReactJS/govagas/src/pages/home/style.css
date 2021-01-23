@@ -45,6 +45,11 @@
     padding-right: 50px;
 }
 
+#img_banner2 {
+    width: 200px;
+    height: 457px;
+}
+
 #info_aluno_senai li {
     display: grid;
     margin-bottom: 25px;

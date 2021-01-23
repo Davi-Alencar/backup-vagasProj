@@ -22,7 +22,7 @@ function CadastroCandidatoQuatro() {
 
     const Post4 = () => {
 
-        let history = useHistory();
+        // let history = useHistory();
 
         const form = {
             //1
@@ -81,7 +81,7 @@ function CadastroCandidatoQuatro() {
         })
             .then(() => {
                 alert('Candidato cadastrado');
-                history.push('/loginCandidato');
+                // history.push('/loginCandidato');
             })
             .catch(err => console.error(err));
     }
@@ -92,7 +92,7 @@ function CadastroCandidatoQuatro() {
             <Header />
             <div >
                 <div className="titulo-completar">
-                    <h1> Cadastro como candidato </h1>
+                    <h1> Informações Extras </h1>
 
                 </div>
                 <div className="BarraProgresso">

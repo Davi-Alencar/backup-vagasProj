@@ -124,8 +124,8 @@ function PubliVagaDois() {
                                         </div>
                                     </div>
                                     <div className="labelAlinhar">
-                                        <Input type="money" name="input2" label="Valor Salarial" placeholder="Ex: Front-End, GIT, C# ..." value={valorSalario} onChange={a => setValorSalario(a.target.value)} />
-                                        <Input type="Name" name="inpustyle" label="Ofertas extras" placeholder="Ex: Cursando Análise e Desenvolvimento de Sistemas" value={ofertaExtra} onChange={a => setOfertaExtra(a.target.value)} />
+                                        <Input type="money" name="input2" label="Valor Salarial" placeholder="3000" value={valorSalario} onChange={a => setValorSalario(a.target.value)} />
+                                        <Input type="Name" name="inpustyle" label="Ofertas Extras" placeholder="Ex: Pano dentário, Seguro de Vida, Vale Transporte" value={ofertaExtra} onChange={a => setOfertaExtra(a.target.value)} />
                                     </div>
                                 </div>
                             </div>

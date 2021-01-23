@@ -25,7 +25,7 @@ function CadastroEmpresaDois() {
 
     const Post = () => {
 
-        let history = useHistory();
+        // let history = useHistory();
 
         const form = {
             // anexarLogo: localStorage.getItem('logo-cadastro'),
@@ -55,7 +55,7 @@ function CadastroEmpresaDois() {
         })
             .then(() => {
                 alert('Empresa Cadastrada com Sucesso!');
-                history.push('/loginEmpresa');
+                // history.push('/loginEmpresa');
                 // setIdUsuario(0);
                 // setIdCandidato(0);
                 setAnexarLogo('')

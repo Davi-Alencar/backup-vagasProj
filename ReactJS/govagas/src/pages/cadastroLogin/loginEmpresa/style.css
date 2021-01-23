@@ -27,6 +27,11 @@
     color: #000000;
 }
 
+.flexImg {
+    width: 400px;
+    height: 450px;
+}
+
 /* .loginCandidato .h1-empresa1 {
     margin-top: 110px;
     font-weight: 300;
@@ -87,7 +92,7 @@
 }
 
 .w-200 {
-    width: 180px;
+    /* width: 180px; */
     margin-left: 210px;
     padding-top: 30px;
 }

@@ -9,7 +9,7 @@ import ImgAviso from '../../../assets/images/candidato/warning.svg';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
-function Documentacao({ match }: any) {
+function DocumentacaoEmpresa({ match }: any) {
 
     let history = useHistory();
 
@@ -169,4 +169,4 @@ function Documentacao({ match }: any) {
     )
 };
 
-export default Documentacao;
+export default DocumentacaoEmpresa;

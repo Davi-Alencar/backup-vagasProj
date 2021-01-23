@@ -7,7 +7,7 @@ import Button from '../../components/button/index';
 import Input from '../../components/input/index';
 import Select from '../../components/selectHab/index';
 import Banner1 from '../../assets/images/banner1.svg'
-import Banner2 from '../../assets/images/Space.svg'
+import Banner2 from '../../assets/images/banner2.svg'
 import ImgSenai_Home from '../../assets/images/Senai_Home_Image.svg';
 import LogoAccenture from '../../assets/images/Home/Logo-Accenture.svg'
 import LogoBRQ from '../../assets/images/Home/Logo-BRQ.svg';
@@ -34,10 +34,10 @@ function Home() {
                         <div className="carousel-item active">
                             <img className="d-block w-100" src={Banner1} alt="First slide" />
                         </div>
-                        {/* <div className="carousel-item">
+                        <div className="carousel-item">
                                 <img className="d-block w-100" src={Banner2} id="img_banner2" alt="Second slide" />
                             </div>
-                            <div className="carousel-item">
+                            {/* <div className="carousel-item">
                                 <img className="d-block w-100" src="..." id="img_banner2" alt="Third slide" />
                             </div> */}
                     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { CSSProperties, useState } from 'react';
 import './style.css';
 import { Link, useHistory } from 'react-router-dom';
 import Footer from '../../../components/footer/index';
@@ -9,6 +9,10 @@ import ImgJoia from '../../../assets/images/empresa/joia.png';
 // import ImgBahia from '../../assets/images/empresa/bahiano.jpeg';
 // import ImgSnoopy from '../../assets/images/snoopy.jpeg';
 // import ImgNao from '../../assets/images/nao.jpeg';
+import ImgRenan from '../../../assets/images/Renan.jpg';
+import ImgDavi from '../../../assets/images/Davi.jpg';
+import ImgErick from '../../../assets/images/Erick.jpg';
+import ImgGabi from '../../../assets/images/Gabi.jpg'
 function LoginCandidato() {
 
   let history = useHistory();
@@ -25,6 +29,9 @@ function LoginCandidato() {
       senha: senha
 
     }
+
+
+
     fetch('https://localhost:5001/api/Login', {
       method: 'POST',
       body: JSON.stringify(logarCom),
@@ -77,7 +84,7 @@ function LoginCandidato() {
               </ol>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src={ImgJoia} className="d-block w-200" alt="..." />
+                  <img src={ImgErick} className="d-block w-200" id="imgBorda" alt="..." />
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
                     <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI
@@ -85,7 +92,7 @@ function LoginCandidato() {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src={ImgJoia} className="d-block w-200" alt="..." />
+                  <img src={ImgRenan} className="d-block w-200" alt="..." />
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
                     <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI focados
@@ -93,7 +100,15 @@ function LoginCandidato() {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src={ImgJoia} className="d-block w-200" alt="..." />
+                  <img src={ImgDavi} className="d-block w-200" alt="..." />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
+                    <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI
+          focados na plataforma Microsoft com inteligência artificial, análise de negócios...’’</p>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <img src={ImgGabi} className="d-block w-200" alt="..." />
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -101,12 +116,12 @@ function LoginCandidato() {
                 </div>
               </div>
               <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span> 
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 {/* setinha aqui */}
                 <span className="sr-only">Previous</span>
               </a>
               <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span> 
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 {/* aqui tabém :) */}
                 <span className="sr-only">Next</span>
               </a>

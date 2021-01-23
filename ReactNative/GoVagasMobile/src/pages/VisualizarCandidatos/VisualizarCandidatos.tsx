@@ -6,33 +6,33 @@ import styles from './style';
 
 
 
-export default function VisualizarCandidatos({ match }: any) {
-
-  const {
-    params: { id },
-  } = match;
-  console.log(id)
+export default function VisualizarCandidatos() {
+  // { match }: any
+  // const {
+  //   params: { id },
+  // } = match;
+  // console.log(id)
 
   const [tipoContratoFiltro, setTipoContratoFiltro] = useState('');
   const [inscricaoFiltrada, setInscricaoFiltrada] = useState([]);
   const [inscricaos, setInscricaos] = useState([]);
 
-  const ListarTodosContratados = () => {
-    fetch("https://localhost:5001/api/Inscricao/Vaga/" + id, {
-      method: 'GET'
-    })
-      .then(response => response.json())
-      .then(dados => {
-        setInscricaos(dados);
-        setInscricaoFiltrada(dados);
-        console.log(dados)
-      })
-      .catch(err => console.error(err))
-  }
+  // const ListarTodosContratados = () => {
+  //   fetch("https://localhost:5001/api/Inscricao/Vaga/" + id, {
+  //     method: 'GET'
+  //   })
+  //     .then(response => response.json())
+  //     .then(dados => {
+  //       setInscricaos(dados);
+  //       setInscricaoFiltrada(dados);
+  //       console.log(dados)
+  //     })
+  //     .catch(err => console.error(err))
+  // }
 
-  useEffect(() => {
-    ListarTodosContratados();
-  }, []);
+  // useEffect(() => {
+  //   ListarTodosContratados();
+  // }, []);
 
   const navigation = useNavigation()
 

@@ -6,8 +6,8 @@ import imgIcone from '../../../assets/images/palm-tree.svg'
 import Sidebar from '../../../components/sidebar/index';
 import Footer from '../../../components/footer/index';
 import Header from '../../../components/header/index'
-import ImgJoia from '../../../assets/images/empresa/joia.png';
-import ImgCandidato from '../../../assets/images/empresa/candidatos.png';
+import ImgJoia from '../../../assets/images/candidato/joia.svg';
+import ImgCandidato from '../../../assets/images/candidato/grupo.svg';
 import ImgMaleta from '../../../assets/images/empresa/briefcase-in-a-circle.svg';
 import ImgAviso from '../../../assets/images/candidato/warning.svg';
 import Grafico from '../Admin/app';

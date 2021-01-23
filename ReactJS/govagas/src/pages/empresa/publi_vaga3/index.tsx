@@ -5,6 +5,7 @@ import '../../../assets/styles/global.css'
 import Header from '../../../components/header/index';
 import Footer from '../../../components/footer/index';
 import Button from '../../../components/button/index';
+import imgbadge from '../../../assets/images/candidato/badge.svg'
 
 import imgmoney from '../../../assets/images/candidato/money.svg'
 import imgtranslation from '../../../assets/images/candidato/translation.svg'
@@ -180,7 +181,7 @@ function PubliVagaTres() {
 
                                                 {/* logo */}
                                                 <div className="logo">
-                                                    <img src={imgAVA} alt="Ava" title="Ava" width="auto" height="60px" />
+                                                    <img src={imgbadge} alt="Ava" title="Ava" width="auto" height="60px" />
                                                 </div>
 
                                                 <div className="bre01">

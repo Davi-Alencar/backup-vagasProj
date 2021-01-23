@@ -199,12 +199,17 @@ function Sidebar() {
                                             <li>Ver Vagas</li>
                                         </div>
                                     </Link>
-                                    <div className="rota">
-                                        <div className="icon">
-                                            <img src={Imgsettnings} alt="" />
+                                    <Link to="" className="Link" onClick={event => {
+                                        event.preventDefault();
+                                        Logout();
+                                    }}>
+                                        <div className="rota">
+                                            <div className="icon">
+                                                <img src={ImgLogoff} alt="" />
+                                            </div>
+                                            <li>Logoff</li>
                                         </div>
-                                        <li>Configurações</li>
-                                    </div>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -250,7 +255,7 @@ function Sidebar() {
                                         <div className="icon">
                                             <img src={Imgchecklist} alt="" />
                                         </div>
-                                        <Link to="/tabelacandidatos"><li>Tabela Candidatos</li></Link>
+                                        <Link to="/tabelacandidatos"><li>Tabela Alunos</li></Link>
                                     </div>
                                     {/* <Link to="/inscricoes"> */}
                                     <div className="rota">

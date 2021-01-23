@@ -83,91 +83,94 @@ export default function Home({ }) {
     return (
         <ScrollView>
             <Menu navigation={navigation} />
-            <Text style={{ backgroundColor: '#EEEEEE' }}>
-                <View style={{
-                    flex: 1,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    <Text style={{
-                        fontSize: 30, marginTop: 30, marginLeft: 115, marginBottom: 30,
-                    }}>Candidaturas</Text>
-                </View>
+                    <View style={styles.container}>
+                <Text style={{ backgroundColor: '#EEEEEE' }}>
+                    <View style={{
+                        flex: 1,
+                        // justifyContent: 'center',
+                        // alignItems: 'center',
+                    }}>
+                        <Text style={styles.elementstyle}>Candidaturas</Text>
+                    </View>
 
-                {
-                    inscricaos.map((item: any) => {
-                        return (
-                            <View key={item.idInscricao} style={{
-                                marginHorizontal: 50,
-                                marginVertical: 30,
-                                backgroundColor: 'white',
-                                width: 320,
-                                borderRadius: 20,
-                                padding: 20,
-                            }}>
-                                <View style={{
-                                    flex: 1, alignItems: 'center'
-                                }}>
-                                    <Text style={{ marginVertical: 1, fontSize: 25, fontWeight: 'bold', textAlign: 'center' }}>{item.idVagaNavigation.idEmpresaNavigation.nomeEmpresa}</Text>
-                                    <Text style={{ marginVertical: 10, fontSize: 20, }}> {item.idVagaNavigation.tituloVaga} </Text>
-
-                                </View>
-                                <View style={{
-                                    flex: 1,
-                                    marginLeft: 10,
-                                    flexDirection: 'row',
-                                    justifyContent: 'space-between'
+                    <View style={styles.main_Visualizar_Vaga1}>
+                    {
+                        inscricaos.map((item: any) => {
+                            return (
+                                <View key={item.idInscricao} style={{
+                                    // marginHorizontal: 50,
+                                    // marginVertical: 30,
+                                    backgroundColor: 'white',
+                                    width: 320,
+                                    borderRadius: 20,
+                                    padding: 20,
                                 }}>
                                     <View style={{
-                                        flex: 1,
-                                        flexDirection: 'column',
-                                        justifyContent: 'space-between'
-
+                                        flex: 1, alignItems: 'center'
                                     }}>
-                                        {/* <View style={{
-                                    }}></View> */}
-                                        {/* <Text style={styles.title}>Descrição</Text> */}
+                                        <Text style={{ marginVertical: 1, fontSize: 25, fontWeight: 'bold', textAlign: 'center' }}>{item.idVagaNavigation.idEmpresaNavigation.nomeEmpresa}</Text>
+                                        <Text style={{ marginVertical: 10, fontSize: 20, }}> {item.idVagaNavigation.tituloVaga} </Text>
 
-                                        {/* <Text style={{ marginVertical: 10}}>{item.idVagaNavigation.idCandidatoNavigation.focoCarreira}</Text> */}
-                                <Text style={{ marginVertical: 10, marginTop: 20 }}>Tempo Exp: {item.idVagaNavigation.tempoExp}</Text>
-                                        <Text style={{ marginVertical: 10 }}>{
-                                            !item.idVagaNavigation.tipoContrato && 'Estágio' ||
-                                            item.idVagaNavigation.tipoContrato && 'Jovem Aprendiz'}
-                                        </Text>
-                                        <Text style={{ marginVertical: 10 }}>{item.idVagaNavigation.habNecessaria}</Text>
                                     </View>
-
                                     <View style={{
                                         flex: 1,
-                                        marginLeft: 20,
-                                        flexDirection: 'column',
+                                        // marginLeft: 10,
+                                        flexDirection: 'row',
                                         justifyContent: 'space-between'
                                     }}>
-                                        {/* <Text style={{ marginVertical: 10}}>{item.idVagaNavigation.descAtivFuncoes}</Text> */}
-                                        {/* <Text style={styles.title}>Requisitos</Text> */}
-                                        {/* <View style={{
+                                        <View style={{
+                                            flex: 1,
+                                            flexDirection: 'column',
+                                            justifyContent: 'space-between'
+
+                                        }}>
+                                            {/* <View style={{
+                                    }}></View> */}
+                                            {/* <Text style={styles.title}>Descrição</Text> */}
+
+                                            {/* <Text style={{ marginVertical: 10}}>{item.idVagaNavigation.idCandidatoNavigation.focoCarreira}</Text> */}
+                                            <Text style={{ marginVertical: 10, marginTop: 20 }}>Tempo Exp: {item.idVagaNavigation.tempoExp}</Text>
+                                            <Text style={{ marginVertical: 10 }}>{
+                                                !item.idVagaNavigation.tipoContrato && 'Estágio' ||
+                                                item.idVagaNavigation.tipoContrato && 'Jovem Aprendiz'}
+                                            </Text>
+                                            <Text style={{ marginVertical: 10 }}>{item.idVagaNavigation.habNecessaria}</Text>
+                                        </View>
+
+                                        <View style={{
+                                            flex: 1,
+                                            // marginLeft: 20,
+                                            flexDirection: 'column',
+                                            justifyContent: 'space-between'
+                                        }}>
+                                            {/* <Text style={{ marginVertical: 10}}>{item.idVagaNavigation.descAtivFuncoes}</Text> */}
+                                            {/* <Text style={styles.title}>Requisitos</Text> */}
+                                            {/* <View style={{
                                             flex: 1,
                                             flexDirection: 'row',
                                         }}> */}
-                                        {/* <Image style={{ width: 20, height: 20, borderRadius: 1000 }} source={require('../../assets/images/SpectroVagas1.png')} /> */}
-                                        <Text style={{ marginVertical: 10, marginTop: 20 }}>{item.idVagaNavigation.valorSalario &&
-                                            'R$' + item.idVagaNavigation.valorSalario || "Valor à Negociar"}</Text>
-                                        {/* </View> */}
+                                            {/* <Image style={{ width: 20, height: 20, borderRadius: 1000 }} source={require('../../assets/images/SpectroVagas1.png')} /> */}
+                                            <Text style={{ marginVertical: 10, marginTop: 20 }}>{item.idVagaNavigation.valorSalario &&
+                                                'R$' + item.idVagaNavigation.valorSalario || "Valor à Negociar"}</Text>
+                                            {/* </View> */}
 
 
-                                        <Text style={{ marginVertical: 10 }}>{item.idVagaNavigation.expertiseVaga} </Text>
-                                        <Text style={{ marginVertical: 10 }}>{
-                                            !item.idVagaNavigation.trabalhoRemoto && 'Trabalho Presencial' ||
-                                            item.idVagaNavigation.trabalhoRemoto && 'Trabalho Remoto'}</Text>
+                                            <Text style={{ marginVertical: 10 }}>{item.idVagaNavigation.expertiseVaga} </Text>
+                                            <Text style={{ marginVertical: 10 }}>{
+                                                !item.idVagaNavigation.trabalhoRemoto && 'Trabalho Presencial' ||
+                                                item.idVagaNavigation.trabalhoRemoto && 'Trabalho Remoto'}</Text>
 
+                                        </View>
                                     </View>
+
+
                                 </View>
+                            );
+                        })}
+                        </View>
+                </Text>
+            </View>
 
-
-                            </View>
-                        );
-                    })}
-            </Text>
 
         </ScrollView>
     );
@@ -178,5 +181,19 @@ const styles = StyleSheet.create({
     title: {
         fontWeight: 'bold',
         fontSize: 15
-    }
+    },
+    container: {
+        backgroundColor: '#DEDEDE',
+        flex: 1,
+        marginLeft: 20
+    },
+    main_Visualizar_Vaga1: {
+        alignItems: "center",
+      },
+      elementstyle: {
+          fontSize: 30,
+          marginBottom: 30,
+          marginTop: 30,
+          marginLeft: 71
+      }
 })

@@ -5,6 +5,7 @@ import Footer from '../../../components/footer/index';
 import Header from '../../../components/header/index'
 import Input from '../../../components/input/index';
 import imgIcone from '../../../assets/images/palm-tree.svg'
+import ImgAviso from '../../../assets/images/candidato/warning.svg';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -14,6 +15,7 @@ function TabelaCandidatos() {
 
     const [idInscricao, setIdInscricao] = useState(0);
     // const [nomeCandFiltro, setNomeCandFiltro] = useState('');
+    const [candidatos, setCandidatos] = useState([]);
     const [vagaFiltro, setVagaFiltro] = useState('');
     const [nomeEmprFiltro, setNomeEmprFiltro] = useState('');
     const [tipoContratoFiltro, setTipoContratoFiltro] = useState('');
@@ -44,10 +46,24 @@ function TabelaCandidatos() {
             .catch(err => console.error(err))
     }
 
+    const ListarCandidatos = () => {
+
+        fetch("https://localhost:5001/api/Candidato", {
+            // authorization: 'Bearer ' + localStorage.getItem('token-tal')
+            method: 'GET'
+        })
+            .then(response => response.json())
+            .then(dados => {
+                setCandidatos(dados);
+            })
+            .catch(err => console.error(err))
+    }
+
     useEffect(() => {
         ListarTodosContratados();
+        ListarCandidatos();
     }, []);
-    
+
 
     return (
         <div>
@@ -60,10 +76,10 @@ function TabelaCandidatos() {
 
                     <div className="itensDadosTC">
 
-                        <div className="dado">
-                            <img src={imgIcone} alt="" />
+                    <div className="dado">
+                            <img src={ImgAviso} alt="" />
                             <div className="flexDadoTxt">
-                                <h1>13</h1>
+                                <h1>{inscricaos.length}</h1>
                                 <p>Situações Pendentes</p>
                             </div>
                         </div>

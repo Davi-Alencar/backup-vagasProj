@@ -114,8 +114,8 @@ function PubliVaga() {
                             <div className="form-sobrevaga">
                                 <Input type="name" name="input1" label="Habilidades necessárias" placeholder="Ex: Front-End, GIT, C# ..." value={habNecessaria} onChange={a => setHabNecessaria(a.target.value)} />
                                 <Input type="name" name="input1" label="CEP:" placeholder="03122-015" value={cep} onChange={a => setCep(a.target.value)} />
-                                <Input type="name" name="input1" label="Requisitos para Vaga" placeholder="Ex: Cursando Análise e Desenvolvimento de Sistemas" value={reqVaga} onChange={a => setReqVaga(a.target.value)} />
-                                <Input type="name" name="input1" label="Tempo de experiência" placeholder="Ex: Cursando Análise e Desenvolvimento de Sistemas" value={tempoExp} onChange={a => setTempoExp(a.target.value)} />
+                                <Input type="name" name="input1" label="Formação para Vaga" placeholder="Ex: Cursando Análise e Desenvolvimento de Sistemas" value={reqVaga} onChange={a => setReqVaga(a.target.value)} />
+                                <Input type="name" name="input1" label="Tempo de experiência" placeholder="Ex: Mais de 2 anos" value={tempoExp} onChange={a => setTempoExp(a.target.value)} />
                                 <div className="form-group">
                                     <label className="Descrição da Empresa">Descrição das Atividades e Funções:</label><br />
                                     <textarea id="input44" placeholder="Ex: - Ser Auto-gerenciável; - Aplicar treinamentos para a equipe. - Inglês intermediário / Fluente" value={descAtivFuncoes} onChange={a => setDescAtivFuncoes(a.target.value)} />

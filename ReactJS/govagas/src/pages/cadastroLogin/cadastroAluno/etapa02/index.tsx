@@ -149,7 +149,7 @@ function CadastroCandidatoDois() {
                                                         <Input name="input2" label="Nível:"placeholder="Júnior" value={expertisecandidato} onChange={a => setExpertisecandidato(a.target.value)} />
                                                     </div> */}
                                                 </div>
-                                                {/* <div className="grupo">
+                                                <div className="grupo">
                                                     <div className="habilidades">
                                                         <Select name="hab" value={habilidade} onChange={a => setHabilidade(a.target.value)} />
                                                     </div>
@@ -166,7 +166,7 @@ function CadastroCandidatoDois() {
                                                     <div className="nivel">
                                                         <SelectLvl name="hab" value={expertisecandidato} onChange={a => setExpertisecandidato(a.target.value)} />
                                                     </div>
-                                                </div> */}
+                                                </div>
 
                                             </div>
                                             {/* <div className="btn-proximo-hab">

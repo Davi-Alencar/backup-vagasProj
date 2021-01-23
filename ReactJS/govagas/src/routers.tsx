@@ -30,6 +30,7 @@ import Listarvagasporid from './pages/empresa/listarvagaid/index';
 import Listarcandidaturaporid from './pages/candidato/listarcandidaturaid/index';
 import Visualizarvaga from './pages/candidato/visualizarvaga/index';
 import Upload from './pages/teste/teste';
+import DocumentacaoEmpresa from './pages/empresa/documentacaoEmpresa';
 
 // 	import Login from ‘./pages/Login’;
 
@@ -42,6 +43,7 @@ function Routers() {
 			<Route path='/tabelacandidatos' exact component={TabelaCandidatos}/>
 			<Route path='/candidaturasvaga/:id' exact component={CandidaturasVaga}/>
 			<Route path='/documentacao/:id' exact component={Documentacao}/>
+			<Route path='/documentacaoEmpresa/:id' exact component={DocumentacaoEmpresa}/>
 			<Route path='/cadastroAluno' component={CadastroCandidatoUm}/>
 			<Route path='/cadastroAluno2' component={CadastroCandidatoDois}/>
 			<Route path='/cadastroAluno3' component={CadastroCandidatoTres}/>

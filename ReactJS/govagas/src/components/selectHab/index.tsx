@@ -1,14 +1,31 @@
 import React, { InputHTMLAttributes } from 'react';
 import './style.css';
-interface SelectProps extends InputHTMLAttributes<HTMLInputElement> {
-    name: any;
+declare global {
+    interface SelectProps extends InputHTMLAttributes<HTMLInputElement> {
+        name: any;
+    }
 }
 
 const Select: React.FC<SelectProps> = ({ name, ...rest }) => {
     return (
         <div>
+            {/* <script src="multiselect/jquery.multiselect.js"></script>
+            <link href="multiselect/jquery.multiselect.css" rel="stylesheet" /> */}
+            <script>
+                {
+                    // $('select[multiple]').multiselect()
+                    
+                    ($('#hab') as any).multiselect({
+                        columns: 1,
+                        placeholder: 'test',
+                        search: true
+                    })
+                }
+                </script>
+
+
             <label htmlFor="hab">Habilidades:</label>
-            <select className="default" name="hab" >
+            <select className="default" name="hab" id="hab">
                 <option selected>Escolher...</option>
                 <option>ABAP</option>
                 <option>ABNF</option>
