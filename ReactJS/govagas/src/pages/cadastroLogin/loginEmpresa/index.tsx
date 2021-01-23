@@ -13,6 +13,11 @@ import ImgSpace from '../../../assets/images/empresa/spaceneedlelogo.jpeg';
 import ImgRede from '../../../assets/images/empresa/daredelogo.jpeg';
 import ImgSnoopy from '../../../assets/images/snoopy.jpeg';
 import ImgNao from '../../../assets/images/nao.jpeg';
+import ImgRenan from '../../../assets/images/Renan.jpg';
+import ImgDavi from '../../../assets/images/Davi.jpg';
+import ImgErick from '../../../assets/images/Erick.jpg';
+import ImgGabi from '../../../assets/images/Gabi.jpg'
+
 function LoginEmpresa() {
 
   let history = useHistory();
@@ -81,7 +86,11 @@ function LoginEmpresa() {
               </ol>
               <div className="carousel-inner">
                 <div className="carousel-item active">
+<<<<<<< HEAD
                   <img src={ImgIntelli} className="d-block w-200" alt="..." />
+=======
+                  <img src={ImgErick} className="d-block w-200" alt="..." />
+>>>>>>> c7766c97680359a184d4f9cee06d54edb525bd39
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Intelitrader</h5>
                     <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI
@@ -89,7 +98,11 @@ function LoginEmpresa() {
                   </div>
                 </div>
                 <div className="carousel-item">
+<<<<<<< HEAD
                   <img src={ImgBrq} className="d-block w-200" alt="..." />
+=======
+                  <img src={ImgRenan} className="d-block w-200" alt="..." />
+>>>>>>> c7766c97680359a184d4f9cee06d54edb525bd39
                   <div className="carousel-caption d-none d-md-block">
                     <h5>BRQ</h5>
                     <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI focados
@@ -97,6 +110,7 @@ function LoginEmpresa() {
                   </div>
                 </div>
                 <div className="carousel-item">
+<<<<<<< HEAD
                   <div className="flexImg">
                     <img src={Banner2} className="d-block w-200" alt="..." />
                   </div>
@@ -111,6 +125,21 @@ function LoginEmpresa() {
                   <div className="carousel-caption d-none d-md-block">
                     <h5>DAREDE</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+=======
+                  <img src={ImgDavi} className="d-block w-200" alt="..." />
+                  <div className="carousel-caption d-none d-md-block">
+                  <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
+                    <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI
+          focados na plataforma Microsoft com inteligência artificial, análise de negócios...’’</p>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <img src={ImgGabi} className="d-block w-200" alt="..." />
+                  <div className="carousel-caption d-none d-md-block">
+                  <h5>Tecnico em Análise e Desenvolvimento de Sistemas</h5>
+                    <p>“O SENAI de Informática  me proporcionou grandes aprendizados e com isso consegui uma vaga na empresa AVANAD uma empresa global de serviços profissionais que fornece consultoria e serviços de TI
+          focados na plataforma Microsoft com inteligência artificial, análise de negócios...’’</p>
+>>>>>>> c7766c97680359a184d4f9cee06d54edb525bd39
                   </div>
                 </div>
               </div>

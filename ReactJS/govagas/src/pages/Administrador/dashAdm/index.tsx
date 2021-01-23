@@ -126,14 +126,6 @@ function DashAdm() {
                             <Grafico />
                         </div>
 
-                        {/* <div className="grafico">
-                            <h2>Gráfico2</h2>
-                        </div>
-
-                        <div className="grafico">
-                            <h2>Gráfico3</h2>
-                        </div> */}
-
                     </div>
 
 

@@ -7,17 +7,15 @@ import Header from '../../../../components/header/index'
 import Button from '../../../../components/button/index';
 import Input from '../../../../components/input/index';
 import '../../../../components/barraProgresso/style.css';
-// import Select from '../../../components/selectHab';
-// import SelectLvl from '../../../components/selectLvl';
+
+
 
 function CadastroCandidatoQuatro() {
 
-    // const [idTipoUsuario, setIdTipoUsuario] = useState(3);
     const [fococarreira, setFococarreira] = useState('');
     const [pretencaosalarial, setPretencaosalarial] = useState('');
     const [trabalhoremoto, setTrabalhoremoto] = useState('');
     const [deficienciafisica, setDeficienciafisica] = useState('');
-    // const [idTipoUsuario, setIdTipoUsuario] = useState(3);
 
 
     const Post4 = () => {
@@ -59,16 +57,13 @@ function CadastroCandidatoQuatro() {
             pretensaoSalario: parseFloat(pretencaosalarial),
             trabalhoRemoto: trabalhoremoto === 'true' ? true : false,
             deficienciaFisica: deficienciafisica === 'true' ? true : false,
-            //estrangeiro
             idUsuarioNavigation: {
                 nome: localStorage.getItem('nome-cadastro'),
                 email: localStorage.getItem('email-cadastro'),
                 senha: localStorage.getItem('senha-cadastro'),
                 dataNascimento: localStorage.getItem('dataNascimento-cadastro'),
                 telefone: localStorage.getItem('telefone-cadastro'),
-                // idTipoUsuarioNavigation: {
-                //     idTipoUsuario: idTipoUsuario
-                //   }
+
             }
         }
         console.log(form)
@@ -85,7 +80,6 @@ function CadastroCandidatoQuatro() {
             })
             .catch(err => console.error(err));
     }
-
 
     return (
         <div className="etapa2candidato">
@@ -146,7 +140,7 @@ function CadastroCandidatoQuatro() {
                                                     </select>
                                                 </div>
                                                 <div className="form-group">
-                                                    <label htmlFor="">Você possui deficiência física?</label>
+                                                    <label htmlFor="">Possui deficiência física?</label>
                                                     <select id="input2" placeholder="Cidade" value={deficienciafisica} onChange={a => setDeficienciafisica(a.target.value)}>
                                                         <option>Seleciona sua opção:</option>
                                                         <option value="true">Sim</option>

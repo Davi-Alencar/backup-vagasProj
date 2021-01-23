@@ -13,14 +13,6 @@
 }
 
 
-/* .centro-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-} */
-
-
 /* Box1 (START) */
 .options-box1 {
     /* display: flex; */
@@ -55,7 +47,11 @@
 .options-box22 {
     display: flex;
     width: 195px;
+<<<<<<< HEAD
+    height: 200px;
+=======
     height: auto;
+>>>>>>> 380a60336e04a5be56c97cc9983fdebd3155e673
     background: #FFFFFF;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.18);
     border-radius: 7px;
@@ -64,11 +60,6 @@
     flex-direction: column;
     margin-right: 50px
 }
-
-/* junta as box */
-/* #options-2 {
-    display: flex;
-} */
 
 .row{
     padding: 1px 60px;
@@ -88,7 +79,6 @@
 
 .options-box22 p{
     text-align: center;
-
     margin-top: 30px;
     margin-left: 5px;
 }
@@ -151,8 +141,7 @@
     width:100%;
     /* cor da barra */
     background-color: #DB324A;
-    /* largura da barra */
-    /* width: 350px; */
+
 
 }
 

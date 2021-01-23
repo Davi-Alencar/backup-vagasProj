@@ -30,7 +30,11 @@ import Listarvagasporid from './pages/empresa/listarvagaid/index';
 import Listarcandidaturaporid from './pages/candidato/listarcandidaturaid/index';
 import Visualizarvaga from './pages/candidato/visualizarvaga/index';
 import Upload from './pages/teste/teste';
+<<<<<<< HEAD
 import DocumentacaoEmpresa from './pages/empresa/documentacaoEmpresa';
+=======
+import VisualizarCandidato from './pages/VisualizarCandidatos/index';
+>>>>>>> c7766c97680359a184d4f9cee06d54edb525bd39
 
 // 	import Login from ‘./pages/Login’;
 
@@ -64,11 +68,16 @@ function Routers() {
 			<Route path='/dashboardCandidato' component={Dashboard}/>
 			<Route path='/candidatar' component={Candidatar}/>
 			<Route path='/vagas' component={Listarvagas}/>
+<<<<<<< HEAD
+			<Route path='/inscricoes' component={Listarvagasporid}/>
+=======
 			<Route path='/inscricoes' component={Listarcandidaturaporid}/>
 			<Route path='/vagaspublicadas' component={Listarvagasporid}/>
 			{/* <Route path='/visualizarvaga' component={Visualizarvaga}/> */}
+>>>>>>> 380a60336e04a5be56c97cc9983fdebd3155e673
 			<Route path='/visualizarvaga/:id' component={Visualizarvaga}/>
 			<Route path="/teste" component={Upload}/>
+			<Route path="/visualizarCandidatos" component={VisualizarCandidato}/>
 		</BrowserRouter>
 	);
 }
